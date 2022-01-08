@@ -1,3 +1,14 @@
+//[]---------------------------------------------------------------------------------[]
+//       Programador: Igor Giuliano
+//
+// 		 Implemente (em linguagem C) uma fila, usando arranjo/vetor circular, que
+//		 utilize uma função furaFila que insere um item na primeira posição da fila.
+//		 A única restrição é que este procedimento deve ser O(1), ou seja, não pode
+//		 movimentar os outros itens da fila. Note que neste caso, estaremos
+//		 desrespeitando o conceito de FILA -> o primeiro a entrar é o primeiro a sair.
+//
+//[]---------------------------------------------------------------------------------[]
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <malloc.h>
@@ -33,8 +44,8 @@ void mostrar(LISTA* lista) {
 void furaFila(LISTA* lista, int chave) {
 	ELEMENTO* aux = malloc(sizeof(ELEMENTO));
 
-	aux->chave 		= chave;
-	aux->prox = lista->head;
+	aux->chave = chave;
+	aux->prox  = lista->head;
 
 	ELEMENTO* auxI = lista->head;
 
@@ -49,7 +60,7 @@ void furaFila(LISTA* lista, int chave) {
 void inserir(LISTA* lista, int chave) {
 	ELEMENTO* aux = malloc(sizeof(ELEMENTO));
 	aux->chave = chave;
-	aux->prox = lista->head;
+	aux->prox  = lista->head;
 
 	if (lista->tamanho == 0) {
 		lista->tamanho = 1;
@@ -67,20 +78,13 @@ void inserir(LISTA* lista, int chave) {
 	auxI->prox = aux;
 }
 
-void cabecalho(){
-	  printf("\t\t ENGENHARIA DA COMPUTACAO - 4 SEMESTRE\n");
-    printf(" PROGRAMADOR:\tIgor Giuliano Augusto de Andrade Justino \n");
-    printf(" DISCIPLINA:\tEstrutura de Dados\n");
-    printf(" PROFESSOR:\t\tEduardo Takeo Ueda\n\n");
-}
-
 int main() {
 	srand(time(NULL));
+
 	LISTA* lista;
 	iniciarLista(lista);
-	int num;
 
-	cabecalho();
+	int num;
 
 	for(int i = 0; i < 10; i++){
 		inserir(lista, rand()%100);

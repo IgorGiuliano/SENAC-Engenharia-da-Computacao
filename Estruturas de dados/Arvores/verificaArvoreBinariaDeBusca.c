@@ -1,3 +1,11 @@
+//[]---------------------------------------------------------------------------------[]
+//       Programador: Igor Giuliano
+//
+//		 Implemente (em linguagem C) uma função que verifica se uma árvore binária 
+//		 é árvore binária de busca.
+//
+//[]---------------------------------------------------------------------------------[]
+
 #include <stdio.h>
 #include <stdlib.h>
 #define true 1

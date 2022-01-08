@@ -65,9 +65,9 @@ int main(){
     printf("\n");
 
     bubblesort(vetor, quantidade_elementos);
-    exibeElementos();
+    exibeElementos(vetor,quantidade_elementos);
 
-    printf("Digite o numero que deseja procurar dentro do vetor:\n");
+    printf("\nDigite o numero que deseja procurar dentro do vetor:\n");
     scanf("%d", &numero);
 
 

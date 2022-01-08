@@ -1,3 +1,11 @@
+//[]--------------------------------------------------------------------------------[]
+//       Programador: Igor Giuliano
+//
+//    	 Implemente (em linguagem C) uma função que dada a matriz de adjacência 
+//		 um vértice do grafo, como entradas, compute o grau deste vértice.
+//
+//[]--------------------------------------------------------------------------------[]
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>

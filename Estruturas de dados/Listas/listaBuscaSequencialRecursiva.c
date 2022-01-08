@@ -1,8 +1,6 @@
 //[]--------------------------------------------------------------------------------[]
 //       Programador: Igor Giuliano
 //
-//       Exercicio 5
-//
 //       Implemente (em linguagem C) uma função que busca/procura, recursivamente,
 //       um valor em uma lista simplesmente encadeada/ligada.
 //

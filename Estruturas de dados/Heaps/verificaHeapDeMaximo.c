@@ -1,3 +1,11 @@
+//[]--------------------------------------------------------------------------------[]
+//       Programador: Igor Giuliano
+//
+//    	 Implemente (em linguagem C) uma função não recursiva que recebe um vetor
+//		 de elementos e verifica se ele é a representação de um heap de máximo
+//
+//[]--------------------------------------------------------------------------------[]
+
 #include <stdio.h>
 
 int isMaxHeap(int* H, int l) {

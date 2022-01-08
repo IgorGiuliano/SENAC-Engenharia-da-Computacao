@@ -1,3 +1,14 @@
+//[]--------------------------------------------------------------------------------[]
+//       Programador: Igor Giuliano
+//
+//       Dizemos que uma sequência de parênteses e colchetes é bem formada se para
+//		 cada ( ou [ existe um correspondente ) ou ]. Por exemplo, ( ( ) [ ] ) é bem
+//		 formada, mas ( [ ) ] não é. Sabendo disso, implemente (em linguagem C) uma 
+//		 função que utiliza uma pilha estática para determinar se uma sequência é bem 
+//		 formada ou não
+//
+//[]--------------------------------------------------------------------------------[]
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
